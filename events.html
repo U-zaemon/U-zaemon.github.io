@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="トライ式高等学院知立キャンパスのイベントを紹介">
+    <title>Events | 知立キャンパス</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <div class="flex-menu">
+            <a href="index.html">Top</a>
+            <a href="access.html">Access</a>
+            <a href="people.html">People</a>
+            <a href="events.html">Events</a>
+            <a href="club.html">Club</a>
+        </div>
+        <div class="flex-menu">
+            <a href="https://www.try-gakuin.com/">トライ式高等学院</a>
+            <a href="https://www.try-gakuin.com/toiawase/">資料請求</a>
+            <a href="https://www.try-gakuin.com/blog/category/%E7%9F%A5%E7%AB%8B%E6%A0%A1%E3%83%96%E3%83%AD%E3%82%B0/">キャンパスブログ</a>
+        </div>
+    </nav>
+    <div class="main-visual"></div>
+    <header class="page_header events_bg">
+        <div class="menu-icon">
+            <button class="hamburger" id="menu-button">
+                <span class="hamburger_bar"></span>
+                <span class="hamburger_bar"></span>
+                <span class="hamburger_bar"></span>
+            </button>
+        </div>
+        <h1 class="page-title">Events</h1>
+    </header>
+    <main>
+        <div class="wrapper">
+            <h3>知立キャンパスのおすすめイベント</h3>
+            <p>
+                月に数回、さまざまなイベントが開催されています<br>
+                気軽に参加できます<img src="images/onpu.png" alt="音符記号" class="kigou">
+            </p>
+            <div class="flex">
+                <div class="box">
+                    <h4>映画鑑賞会</h4>
+                    <p>
+                        映画鑑賞と言うと堅苦しいですが、<br>
+                        実際は映画やアニメをワイワイ観ています！<br>
+                        観たい作品を提案し合うのも楽しいです！
+                    </p>
+                    <img src="images/movie_event.jpeg" alt="映画鑑賞会のようす" class="picture">
+                </div>
+                <div class="box">
+                    <h4>知立オープンキャンパス</h4>
+                    <p>
+                        行事の映像や在校生の話を交えて、<br>
+                        知立キャンパスでの学校生活を紹介しています<br>
+                        よかったら来てください(*^▽^*)
+                    </p>
+                    <img src="images/open_campus.jpg" alt="オープンキャンパスのようす" class="picture">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h3>おもな大型イベント</h3>
+            <p>
+                地方エリア規模のイベントや全国規模のイベントで、他キャンパスの生徒と交流できます<br>
+                さまざまなことに挑戦して、かけがえのない思い出をつくりましょう☆
+            </p>
+            <div class="flex">
+                <div class="box">
+                    <h4>林間学校・修学旅行</h4>
+                    <p>
+                        林間学校では、中京・東海エリアの生徒が、<br>
+                        修学旅行では、全国の生徒が参加します！<br>
+                        貴重な経験ができるので、おすすめです(≧▽≦)
+                    </p>
+                    <img src="images/sea.jpg" alt="林間学校のようす" class="picture">
+                </div>
+                <div class="box">
+                    <h4>体育祭</h4>
+                    <p>
+                        中京・東海エリアのキャンパス対抗で<br>
+                        さまざまな競技に挑戦します<br>
+                        応援旗や応援グッズを作って盛り上げます<img src="images/fire.png" alt="火の玉記号" class="kigou">
+                    </p>
+                    <img src="images/sports_event.jpg" alt="体育祭のようす" class="picture">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-menu">
+            <div class="box">
+                <a href="index.html">Top</a>
+                <a href="access.html">Access</a>
+                <a href="people.html">People</a>
+                <a href="events.html">Events</a>
+                <a href="club.html">Club</a>
+            </div>
+            <div class="box">
+                <a href="https://www.try-gakuin.com/">トライ式高等学院</a>
+                <a href="https://www.try-gakuin.com/toiawase/">資料請求</a>
+                <a href="https://www.try-gakuin.com/blog/category/%E7%9F%A5%E7%AB%8B%E6%A0%A1%E3%83%96%E3%83%AD%E3%82%B0/">キャンパスブログ</a>
+            </div>
+        </div>
+        <p>&copy;知立キャンパス</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#menu-button').click(function(){
+                $('nav').toggleClass('menu-on');
+            })
+        })
+    </script>
+</body>

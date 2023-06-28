@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="トライ式高等学院知立キャンパスの紹介">
+    <title>知立キャンパス</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="top_header">
+        <div class="menu-icon">
+            <button class="hamburger" id="menu-button">
+                <span class="hamburger_bar"></span>
+                <span class="hamburger_bar"></span>
+                <span class="hamburger_bar"></span>
+            </button>
+        </div>
+        <nav>
+            <div class="flex-menu">
+                <a href="index.html">Top</a>
+                <a href="access.html">Access</a>
+                <a href="people.html">People</a>
+                <a href="events.html">Events</a>
+                <a href="club.html">Club</a>
+            </div>
+            <div class="flex-menu">
+                <a href="https://www.try-gakuin.com/">トライ式高等学院</a>
+                <a href="https://www.try-gakuin.com/toiawase/">資料請求</a>
+                <a href="https://www.try-gakuin.com/blog/category/%E7%9F%A5%E7%AB%8B%E6%A0%A1%E3%83%96%E3%83%AD%E3%82%B0/">キャンパスブログ</a>
+            </div>
+        </nav>
+        <div class="main-visual"></div>
+        <h1 class="catch_1">成長できる場所</h1>
+        <h1 class="catch_2">知立キャンパス</h1>
+    </header>
+    <main>
+        <a href="access.html">
+            <div class="wrapper">
+                <div class="point">
+                    <h2 class="cool">成長</h2>
+                    <div class="space"></div>
+                </div>
+                <h2>キャンパス</h2>
+                <p>知立駅のすぐ近くのビルにキャンパスがあります<br>二階に受付と授業のブースなどが、一階にはイベントが行われるスペースがあります </p>
+                <p class="blue">クリックでくわしく！</p>
+                <img src="images/chiryu-campus.jpg" alt="キャンパスの写真" class="picture">
+            </div>
+        </a>
+        <a href="people.html">
+            <div class="wrapper">
+                <div class="point reverse">
+                    <h2 class="cool">仲間</h2>
+                    <div class="space"></div>
+                </div>
+                <h2>生徒と先生</h2>
+                <p>親切で話しやすい人が多いです<br>一緒に学校生活を楽しみましょう！</p>
+                <p class="blue">クリックでくわしく！</p>
+                <img src="images/people_tramp.jpg" alt="キャンパス内のようす" class="picture">
+            </div>
+        </a>
+        <a href="events.html">
+            <div class="wrapper">
+                <div class="point">
+                    <h2 class="cool">挑戦</h2>
+                    <div class="space"></div>
+                </div>
+                <h2>イベント</h2>
+                <p>キャンパス内のイベントと、他キャンパスとの合同イベントがあります<br>すべて参加は自由です</p>
+                <p class="blue">クリックでくわしく！</p>
+                <img src="images/sea_kujira.jpg" alt="イベントのようす" class="picture">
+            </div>
+        </a>
+        <a href="club.html">
+            <div class="wrapper">
+                <div class="point reverse">
+                    <h2 class="cool">青春</h2>
+                    <div class="space"></div>
+                </div>
+                <h2>クラブ活動</h2>
+                <p>トライ式高等学院にも部活があります<br>知立キャンパスでは3つのクラブが活動中</p>
+                <p class="blue">クリックでくわしく！</p>
+                <img src="images/sports_club.jpg" alt="クラブ活動のようす" class="picture">
+            </div>
+        </a>
+    </main>
+    <footer>
+        <div class="footer-menu">
+            <div class="box">
+                <a href="index.html">Top</a>
+                <a href="access.html">Access</a>
+                <a href="people.html">People</a>
+                <a href="events.html">Events</a>
+                <a href="club.html">Club</a>
+            </div>
+            <div class="box">
+                <a href="https://www.try-gakuin.com/">トライ式高等学院</a>
+                <a href="https://www.try-gakuin.com/toiawase/">資料請求</a>
+                <a href="https://www.try-gakuin.com/blog/category/%E7%9F%A5%E7%AB%8B%E6%A0%A1%E3%83%96%E3%83%AD%E3%82%B0/">キャンパスブログ</a>
+            </div>
+        </div>
+        <p>&copy;知立キャンパス</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#menu-button').click(function(){
+                $('nav').toggleClass('menu-on');
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    background-color: #66aef0;
+}
+h1,h2 {
+    font-size: 77px;
+    margin: 0;
+}
+h3 {
+    font-size: 40px;
+}
+h4 {
+    font-size: 30px;
+}
+h1 {
+    color: #fff;
+}
+h2,h3,h4 {
+    color: #4482ca;
+}
+p {
+    color: #44505f;
+}
+a {
+    color: #66aef0;
+    text-decoration: none;
+}
+
+.menu-icon {
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background-color: #66aef0;
+    border-radius: 50%;
+    z-index: 999;
+}
+button {
+    border-color: transparent;
+    background: transparent;
+    cursor: pointer;
+}
+.hamburger {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.hamburger_bar {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 7px;
+    left: 0;
+}
+.hamburger_bar:nth-child(1) {
+    top: 0;
+  } 
+.hamburger_bar:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.hamburger_bar:nth-child(3) {
+    top: 100%;
+    transform: translateY(-100%);
+}
+.top_header {
+    height: 100vh;
+}
+nav {
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color: rgba(102, 173, 240, 0.9);
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.menu-on {
+    visibility: visible;
+    opacity: 1;
+    transition: .5s;
+}
+.flex-menu a {
+    margin: 10px;
+    color: #fff;
+}
+.main-visual {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/campus.JPG);
+    background-size: 480px 640px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+}
+.catch_1 {
+    writing-mode: vertical-rl;
+    position: absolute;
+    left: 35%;
+    bottom: 4rem;
+    animation: catch_1 1s forwards;
+}
+.catch_2 {
+    writing-mode: vertical-rl;
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    animation: catch_2 1.5s forwards;
+}
+@keyframes catch_1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes catch_2 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.page-title {
+    animation: catch_1 1s forwards;
+}
+.page_header {
+    padding: 200px;
+    text-align: center;
+}
+.access_bg {
+    background-image: url(images/chiryu-campus.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.people_bg {
+    background-image: url(images/people_tramp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.events_bg {
+    background-image: url(images/sea_kujira.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.club_bg {
+    background-image: url(images/sports_club.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    text-align: center;
+    background-color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.wrapper {
+    margin: 10rem;
+}
+.point {
+    display: flex;
+    justify-content: center;
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+.space {
+    width: 30rem;
+}
+.cool {
+    color: #dbdbdb;
+    margin-bottom: -3rem;
+}
+.blue {
+    color: #66aef0;
+}
+.picture {
+    width: 600px;
+    margin: 1rem;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+}
+.access_text p {
+    margin: 4rem;
+    text-align: left;
+}
+.box {
+    text-align: center;
+}
+.people-icon {
+    width: 170px;
+    border-radius: 25%;
+}
+.message {
+    background-color: #c6c6c6;
+    text-align: left;
+    width: 25rem;
+    height: 14rem;
+    border-radius: 8%;
+    padding: 1.5rem;
+    margin: 1rem;
+}
+.kigou {
+    height: 0.8rem;
+}
+.club_text p {
+    margin-top: 7rem;
+    text-align: left;
+}
+
+footer {
+    padding-top: 350px;
+}
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+}
+footer a,footer p {
+    color: #fff;
+    display: block;
+    margin: 30px;
+}
+footer p {
+    text-align: center;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    h1,h2 {
+        font-size: 45px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    h4 {
+        font-size: large;
+    }
+    p,a {
+        font-size: small;
+    }
+    .picture {
+        width: 320px;
+    }
+    .main-visual {
+        background-size: contain;
+    }
+    .catch_1 {
+        left: 25%;
+    }
+    .catch_2 {
+        left: 5%;
+    }
+    .wrapper {
+        margin: 40px 0 40px 0;
+    }
+    .flex {
+        display: block;
+        padding: 3rem 0 3rem 0;
+    }
+    .page_header {
+        padding: 80px;
+    }
+    iframe {
+        width: 100vw;
+        height: 300px;
+    }
+    .access_text p {
+        margin: 1rem;
+    }
+    .message {
+        width: 300px;
+        height: 200px;
+        padding: 1rem;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .club_text p {
+        margin-top: 0;
+    }
+    .kigou {
+        height: 0.6rem;
+    }
+}

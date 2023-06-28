@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="トライ式高等学院知立キャンパスのクラブ活動を紹介">
+    <title>Club | 知立キャンパス</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <div class="flex-menu">
+            <a href="index.html">Top</a>
+            <a href="access.html">Access</a>
+            <a href="people.html">People</a>
+            <a href="events.html">Events</a>
+            <a href="club.html">Club</a>
+        </div>
+        <div class="flex-menu">
+            <a href="https://www.try-gakuin.com/">トライ式高等学院</a>
+            <a href="https://www.try-gakuin.com/toiawase/">資料請求</a>
+            <a href="https://www.try-gakuin.com/blog/category/%E7%9F%A5%E7%AB%8B%E6%A0%A1%E3%83%96%E3%83%AD%E3%82%B0/">キャンパスブログ</a>
+        </div>
+    </nav>
+    <div class="main-visual"></div>
+    <header class="page_header club_bg">
+        <div class="menu-icon">
+            <button class="hamburger" id="menu-button">
+                <span class="hamburger_bar"></span>
+                <span class="hamburger_bar"></span>
+                <span class="hamburger_bar"></span>
+            </button>
+        </div>
+        <h1 class="page-title">Club</h1>
+    </header>
+    <main>
+        <div class="wrapper">
+            <h3>スポーツ部</h3>
+            <div class="flex">
+                <img src="images/sports_club.jpg" alt="スポーツ部のようす" class="picture">
+                <div class="club_text">
+                    <p>バレーやバドミントン、卓球などに挑戦します</p>
+                    <p>【活動場所】キャンパス付近の体育館<br>【活動日】月2回金曜日  13~15時</p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h3>eスポーツ部</h3>
+            <div class="flex">
+                <img src="images/e-sports_club.jpg" alt="eスポーツ部のようす" class="picture">
+                <div class="club_text">
+                    <p>Switchのゲームやボードゲーム、カードゲームを行います</p>
+                    <p>【活動場所】キャンパス<br>【活動日】毎週月曜日  13~15時</p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <h3>美術部</h3>
+            <div class="flex">
+                <img src="images/art-club.jpeg" alt="美術部のようす" class="picture">
+                <div class="club_text">
+                    <p>デッサンを中心に活動を行います</p>
+                    <p>【活動場所】キャンパス<br>【活動日】月2回金曜日  13~15時</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-menu">
+            <div class="box">
+                <a href="index.html">Top</a>
+                <a href="access.html">Access</a>
+                <a href="people.html">People</a>
+                <a href="events.html">Events</a>
+                <a href="club.html">Club</a>
+            </div>
+            <div class="box">
+                <a href="https://www.try-gakuin.com/">トライ式高等学院</a>
+                <a href="https://www.try-gakuin.com/toiawase/">資料請求</a>
+                <a href="https://www.try-gakuin.com/blog/category/%E7%9F%A5%E7%AB%8B%E6%A0%A1%E3%83%96%E3%83%AD%E3%82%B0/">キャンパスブログ</a>
+            </div>
+        </div>
+        <p>&copy;知立キャンパス</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#menu-button').click(function(){
+                $('nav').toggleClass('menu-on');
+            })
+        })
+    </script>
+</body>

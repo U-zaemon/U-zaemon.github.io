@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="トライ式高等学院知立キャンパスのキャンパス長からメッセージ">
+    <title>People | 知立キャンパス</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav>
+        <div class="flex-menu">
+            <a href="index.html">Top</a>
+            <a href="access.html">Access</a>
+            <a href="people.html">People</a>
+            <a href="events.html">Events</a>
+            <a href="club.html">Club</a>
+        </div>
+        <div class="flex-menu">
+            <a href="https://www.try-gakuin.com/">トライ式高等学院</a>
+            <a href="https://www.try-gakuin.com/toiawase/">資料請求</a>
+            <a href="https://www.try-gakuin.com/blog/category/%E7%9F%A5%E7%AB%8B%E6%A0%A1%E3%83%96%E3%83%AD%E3%82%B0/">キャンパスブログ</a>
+        </div>
+    </nav>
+    <div class="main-visual"></div>
+    <header class="page_header people_bg">
+        <div class="menu-icon">
+            <button class="hamburger" id="menu-button">
+                <span class="hamburger_bar"></span>
+                <span class="hamburger_bar"></span>
+                <span class="hamburger_bar"></span>
+            </button>
+        </div>
+        <h1 class="page-title">People</h1>
+    </header>
+    <main>
+        <div class="wrapper">
+            <h3>キャンパス長からのメッセージ</h3>
+            <div class="flex">
+                <div class="box">
+                    <img src="images/sato.PNG" alt="佐藤先生" class="people-icon">
+                    <h4>佐藤千咲希さん</h4>
+                    <div class="message">
+                        <p>
+                            こんにちは！キャンパス長の佐藤です。<br>
+                            みなさんはどんな高校生活を送ろうと考えていますか？<br>
+                            「勉強を頑張りたい！」「たくさん友達を作りたい！」<br>
+                            同じような気持ちで入学した先輩たちが知立キャンパスに通って、高校生活を送っています。<br>
+                            一度しかない高校生活いっしょに楽しみましょう♪
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/matsuzawa.png" alt="松澤先生" class="people-icon">
+                    <h4>松澤直人さん</h4>
+                    <div class="message">
+                        <p>
+                            トライ式高等学院は、一人ひとりに合わせてオリジナルの時間割を組むことができます！<br>
+                            効率よく目指したい大学に必要な授業に特化させるもよし！卒業のための課題をサクサク進めるもよし！<br>
+                            また、文化祭や体育祭、林間学校や修学旅行などワイワイできるイベントも実施しています。<br>
+                            自分のための時間を最大限活した高校生活を一緒に送りましょう！！
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-menu">
+            <div class="box">
+                <a href="index.html">Top</a>
+                <a href="access.html">Access</a>
+                <a href="people.html">People</a>
+                <a href="events.html">Events</a>
+                <a href="club.html">Club</a>
+            </div>
+            <div class="box">
+                <a href="https://www.try-gakuin.com/">トライ式高等学院</a>
+                <a href="https://www.try-gakuin.com/toiawase/">資料請求</a>
+                <a href="https://www.try-gakuin.com/blog/category/%E7%9F%A5%E7%AB%8B%E6%A0%A1%E3%83%96%E3%83%AD%E3%82%B0/">キャンパスブログ</a>
+            </div>
+        </div>
+        <p>&copy;知立キャンパス</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('#menu-button').click(function(){
+                $('nav').toggleClass('menu-on');
+            })
+        })
+    </script>
+</body>
